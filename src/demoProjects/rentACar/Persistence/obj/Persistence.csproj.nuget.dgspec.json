@@ -76,7 +76,7 @@
         "projectName": "Application",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\rentACar\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\demoProjects\\rentACar\\Application\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\rentACar\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -135,7 +135,7 @@
         "projectName": "Domain",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\rentACar\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\demoProjects\\rentACar\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\rentACar\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -238,7 +238,15 @@
               "target": "Package",
               "version": "[6.0.1, )"
             },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
             "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[6.0.0, )"
             }

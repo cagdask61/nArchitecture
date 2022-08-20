@@ -14,7 +14,7 @@ namespace WebAPI.Controllers
         {
             _brandRepository = brandRepository;
         }
-
+        //testing
         [HttpGet("get-brands")]
         public async Task<IActionResult> GetAllAsync()
         {

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Persistence.Configurations;
 using Persistence.Contexts;
 using Persistence.Repositories;
 using System;
@@ -16,7 +17,7 @@ namespace Persistence
     {
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("MsSqlServer")));
+            services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("MsSQLServer")));
             services.AddScoped<IBrandRepository, BrandRepository>();
 
             return services;
@@ -24,7 +25,7 @@ namespace Persistence
 
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services)
         {
-            services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(""));
+            services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(ConnectionString.Get()));
             services.AddScoped<IBrandRepository, BrandRepository>();
 
             return services;
