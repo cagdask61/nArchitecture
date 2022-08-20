@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "WvFY90L+IAxWbbRlKiXOp3opDJymhDM92CcvI2pw36D8ptsp9VGkfRY7K6JiGaP52lYis0tEiX/nhpm9CO4cug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\templateProject\\Infrastructure\\Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\kocam\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -13,3 +13,18 @@ public class Entity
         Id = id;
     }
 }
+
+
+public class Entity<TKey>
+{
+    public TKey Id { get; set; }
+
+    public Entity()
+    {
+    }
+
+    public Entity(TKey id) : this()
+    {
+        Id = id;
+    }
+}

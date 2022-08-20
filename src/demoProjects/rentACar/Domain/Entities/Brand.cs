@@ -7,18 +7,20 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
-    public class Brand:Entity
+    public class Brand : Entity
     {
         public string Name { get; set; }
+        public bool IsApproved { get; set; }
 
         public Brand()
         {
         }
 
-        public Brand(int id, string name):this()
+        public Brand(int id, string name, bool isApproved) : this()
         {
             Id = id;
             Name = name;
+            IsApproved = isApproved;
         }
     }
 }

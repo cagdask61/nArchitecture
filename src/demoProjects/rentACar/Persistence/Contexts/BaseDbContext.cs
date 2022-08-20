@@ -15,17 +15,17 @@ namespace Persistence.Contexts
         public DbSet<Brand> Brands { get; set; }
        
 
-        public BaseDbContext(DbContextOptions dbContextOptions, IConfiguration configuration) : base(dbContextOptions)
+        public BaseDbContext(DbContextOptions options, IConfiguration configuration) : base(options)
         {
             Configuration = configuration;
         }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
+        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        //{
             //if (!optionsBuilder.IsConfigured)
             //    base.OnConfiguring(
             //        optionsBuilder.UseSqlServer(Configuration.GetConnectionString("SomeConnectionString")));
-        }
+        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,11 +34,12 @@ namespace Persistence.Contexts
                 a.ToTable("Brands").HasKey(k => k.Id);
                 a.Property(p => p.Id).HasColumnName("Id");
                 a.Property(p => p.Name).HasColumnName("Name");
+                a.Property(p => p.IsApproved).HasColumnName("IsApproved");
             });
 
 
 
-            Brand[] brandEntitySeeds = { new(1, "BMW"), new(2, "Mercedes") };
+            Brand[] brandEntitySeeds = { new(1, "BMW",true), new(2, "Mercedes", true), new(3, "Audi", true), new(4, "Fiat", true) };
             modelBuilder.Entity<Brand>().HasData(brandEntitySeeds);
 
            

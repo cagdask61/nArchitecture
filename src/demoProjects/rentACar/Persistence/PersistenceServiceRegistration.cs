@@ -14,12 +14,17 @@ namespace Persistence
 {
     public static class PersistenceServiceRegistration
     {
-        public static IServiceCollection AddPersistenceServices(this IServiceCollection services,
-                                                                IConfiguration configuration)
+        public static IServiceCollection AddPersistenceServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddDbContext<BaseDbContext>(options =>
-                                                     options.UseSqlServer(
-                                                         configuration.GetConnectionString("RentACarCampConnectionString")));
+            services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("MsSqlServer")));
+            services.AddScoped<IBrandRepository, BrandRepository>();
+
+            return services;
+        }
+
+        public static IServiceCollection AddPersistenceServices(this IServiceCollection services)
+        {
+            services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(""));
             services.AddScoped<IBrandRepository, BrandRepository>();
 
             return services;

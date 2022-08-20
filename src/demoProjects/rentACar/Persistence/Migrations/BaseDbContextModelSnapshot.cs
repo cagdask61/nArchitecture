@@ -30,6 +30,10 @@ namespace Persistence.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<bool>("IsApproved")
+                        .HasColumnType("bit")
+                        .HasColumnName("IsApproved");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)")
@@ -43,12 +47,26 @@ namespace Persistence.Migrations
                         new
                         {
                             Id = 1,
+                            IsApproved = true,
                             Name = "BMW"
                         },
                         new
                         {
                             Id = 2,
+                            IsApproved = true,
                             Name = "Mercedes"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            IsApproved = true,
+                            Name = "Audi"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            IsApproved = true,
+                            Name = "Fiat"
                         });
                 });
 #pragma warning restore 612, 618
