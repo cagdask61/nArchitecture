@@ -11,7 +11,7 @@
         "projectName": "Core.Mailing",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Mailing\\Core.Mailing.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\corePackages\\Core.Mailing\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Mailing\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -11,7 +11,7 @@
         "projectName": "Core.ElasticSearch",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.ElasticSearch\\Core.ElasticSearch.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\corePackages\\Core.ElasticSearch\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.ElasticSearch\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",

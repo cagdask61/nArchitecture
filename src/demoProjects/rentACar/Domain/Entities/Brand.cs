@@ -12,15 +12,19 @@ namespace Domain.Entities
         public string Name { get; set; }
         public bool IsApproved { get; set; }
 
+
         public Brand()
         {
         }
 
-        public Brand(int id, string name, bool isApproved) : this()
+        public Brand(int id, string name, bool isApproved, DateTime createdDate, DateTime updatedDate) : this()
         {
             Id = id;
             Name = name;
             IsApproved = isApproved;
+            CreatedDate = createdDate;
+            UpdatedDate = updatedDate;
         }
+
     }
 }

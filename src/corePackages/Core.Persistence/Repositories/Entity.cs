@@ -4,6 +4,9 @@ public class Entity
 {
     public int Id { get; set; }
 
+    public DateTime CreatedDate { get; set; }
+    public DateTime UpdatedDate { get; set; }
+
     public Entity()
     {
     }
@@ -12,12 +15,16 @@ public class Entity
     {
         Id = id;
     }
+
 }
 
 
 public class Entity<TKey>
 {
     public TKey Id { get; set; }
+
+    public DateTime CreatedDate { get; set; }
+    public DateTime UpdatedDate { get; set; }
 
     public Entity()
     {

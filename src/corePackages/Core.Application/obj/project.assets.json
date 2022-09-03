@@ -4881,7 +4881,7 @@
       "projectName": "Core.Application",
       "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Application\\Core.Application.csproj",
       "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\corePackages\\Core.Application\\obj\\",
+      "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",

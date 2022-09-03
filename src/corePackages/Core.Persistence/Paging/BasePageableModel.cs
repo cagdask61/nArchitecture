@@ -8,4 +8,5 @@ public class BasePageableModel
     public int Pages { get; set; }
     public bool HasPrevious { get; set; }
     public bool HasNext { get; set; }
+    public int CurrentCount { get; set; }
 }

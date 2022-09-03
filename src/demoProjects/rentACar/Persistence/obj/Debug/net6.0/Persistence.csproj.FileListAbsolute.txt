@@ -17,3 +17,9 @@ C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\
 C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\obj\Debug\net6.0\refint\Persistence.dll
 C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\obj\Debug\net6.0\Persistence.pdb
 C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\obj\Debug\net6.0\ref\Persistence.dll
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\bin\Debug\net6.0\Core.CrossCuttingConcerns.dll
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\bin\Debug\net6.0\Core.CrossCuttingConcerns.pdb
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\bin\Debug\net6.0\Core.Application.dll
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\bin\Debug\net6.0\Core.Security.dll
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Persistence\bin\Debug\net6.0\Core.Security.pdb

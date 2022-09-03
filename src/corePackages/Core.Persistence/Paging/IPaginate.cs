@@ -10,4 +10,5 @@ public interface IPaginate<T>
     IList<T> Items { get; }
     bool HasPrevious { get; }
     bool HasNext { get; }
+    int CurrentCount { get; }
 }

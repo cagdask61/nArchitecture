@@ -18,6 +18,7 @@ public class Paginate<T> : IPaginate<T>
             Pages = (int)Math.Ceiling(Count / (double)Size);
 
             Items = querable.Skip((Index - From) * Size).Take(Size).ToList();
+
         }
         else
         {
@@ -29,6 +30,7 @@ public class Paginate<T> : IPaginate<T>
             Pages = (int)Math.Ceiling(Count / (double)Size);
 
             Items = enumerable.Skip((Index - From) * Size).Take(Size).ToList();
+
         }
     }
 
@@ -45,6 +47,8 @@ public class Paginate<T> : IPaginate<T>
     public IList<T> Items { get; set; }
     public bool HasPrevious => Index - From > 0;
     public bool HasNext => Index - From + 1 < Pages;
+
+    public int CurrentCount => Items.Count;
 }
 
 internal class Paginate<TSource, TResult> : IPaginate<TResult>
@@ -109,6 +113,8 @@ internal class Paginate<TSource, TResult> : IPaginate<TResult>
     public bool HasPrevious => Index - From > 0;
 
     public bool HasNext => Index - From + 1 < Pages;
+
+    public int CurrentCount => Items.Count;
 }
 
 public static class Paginate

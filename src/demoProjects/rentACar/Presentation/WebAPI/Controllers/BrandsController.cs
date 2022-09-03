@@ -1,4 +1,9 @@
-﻿using Application.Services.Repositories;
+﻿using Application.Features.Brands.Commands.CreateBrand;
+using Application.Features.Brands.Dtos;
+using Application.Features.Brands.Models;
+using Application.Features.Brands.Queries.GetByIdBrand;
+using Application.Features.Brands.Queries.GetListBrand;
+using Core.Application.Requests;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,20 +11,33 @@ namespace WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BrandsController : ControllerBase
+    public class BrandsController : CommonController
     {
-        private readonly IBrandRepository _brandRepository;
 
-        public BrandsController(IBrandRepository brandRepository)
+        [HttpPost]
+        public async Task<IActionResult> Add([FromBody] CreateBrandCommand createBrandCommand)
         {
-            _brandRepository = brandRepository;
+            CreatedBrandDto result = await Mediator.Send(createBrandCommand);
+            return Created("",result);
         }
-        //testing
-        [HttpGet("get-brands")]
-        public async Task<IActionResult> GetAllAsync()
+
+        [HttpGet]
+        public async Task<IActionResult> GetList([FromQuery] PageRequest pageRequest)
         {
-            var result = await _brandRepository.GetListAsync(enableTracking:false);
-            return Ok(result);
+            GetListBrandQuery getListBrandQuery = new()
+            {
+                PageRequest = pageRequest
+            };
+
+            BrandListModel result = await Mediator.Send(getListBrandQuery);
+            return Created("", result);
+        }
+
+        [HttpGet("{Id}")]
+        public async Task<IActionResult> GetById([FromRoute] GetByIdBrandQuery getByIdBrandQuery)
+        {
+            BrandGetByIdDto brandGetByIdDto = await Mediator.Send(getByIdBrandQuery);
+            return Created("", brandGetByIdDto);
         }
     }
 }

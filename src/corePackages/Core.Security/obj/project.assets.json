@@ -1053,7 +1053,7 @@
       "projectName": "Core.Security",
       "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Security\\Core.Security.csproj",
       "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\corePackages\\Core.Security\\obj\\",
+      "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Security\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",

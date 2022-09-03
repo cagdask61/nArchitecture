@@ -11,7 +11,7 @@
         "projectName": "Core.Application",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Application\\Core.Application.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\corePackages\\Core.Application\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -95,7 +95,7 @@
         "projectName": "Core.CrossCuttingConcerns",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.CrossCuttingConcers\\Core.CrossCuttingConcerns.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\corePackages\\Core.CrossCuttingConcers\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.CrossCuttingConcers\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -172,7 +172,7 @@
         "projectName": "Core.Persistence",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Persistence\\Core.Persistence.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\corePackages\\Core.Persistence\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -237,7 +237,7 @@
         "projectName": "Core.Security",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Security\\Core.Security.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\corePackages\\Core.Security\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\corePackages\\Core.Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -318,7 +318,7 @@
         "projectName": "Application",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\templateProject\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\demoProjects\\templateProject\\Application\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\templateProject\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -390,7 +390,7 @@
         "projectName": "Domain",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\templateProject\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\demoProjects\\templateProject\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\templateProject\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -449,7 +449,7 @@
         "projectName": "Persistence",
         "projectPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\templateProject\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\kocam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kocam\\Source\\Repos\\nArchitecture\\src\\demoProjects\\templateProject\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\kocam\\source\\repos\\nArchitecture\\src\\demoProjects\\templateProject\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kocam\\AppData\\Roaming\\NuGet\\NuGet.Config",

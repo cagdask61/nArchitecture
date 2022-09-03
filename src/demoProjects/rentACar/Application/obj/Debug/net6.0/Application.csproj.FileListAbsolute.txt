@@ -15,3 +15,9 @@ C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\
 C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\obj\Debug\net6.0\refint\Application.dll
 C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\obj\Debug\net6.0\Application.pdb
 C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\bin\Debug\net6.0\Core.CrossCuttingConcerns.dll
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\bin\Debug\net6.0\Core.CrossCuttingConcerns.pdb
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\bin\Debug\net6.0\Core.Application.dll
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\bin\Debug\net6.0\Core.Security.dll
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\bin\Debug\net6.0\Core.Application.pdb
+C:\Users\kocam\source\repos\nArchitecture\src\demoProjects\rentACar\Application\bin\Debug\net6.0\Core.Security.pdb
