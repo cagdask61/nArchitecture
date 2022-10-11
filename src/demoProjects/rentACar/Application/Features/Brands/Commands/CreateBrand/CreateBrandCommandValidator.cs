@@ -14,6 +14,7 @@ namespace Application.Features.Brands.Commands.CreateBrand
             RuleFor(brand => brand.Name).NotNull();
             RuleFor(brand => brand.Name).NotEmpty();
             RuleFor(brand => brand.Name).MinimumLength(2);
+
         }
     }
 }

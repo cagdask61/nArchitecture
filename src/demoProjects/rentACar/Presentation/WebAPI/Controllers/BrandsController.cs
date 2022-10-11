@@ -14,14 +14,14 @@ namespace WebAPI.Controllers
     public class BrandsController : CommonController
     {
 
-        [HttpPost]
+        [HttpPost("Add")]
         public async Task<IActionResult> Add([FromBody] CreateBrandCommand createBrandCommand)
         {
             CreatedBrandDto result = await Mediator.Send(createBrandCommand);
             return Created("",result);
         }
 
-        [HttpGet]
+        [HttpGet("GetList")]
         public async Task<IActionResult> GetList([FromQuery] PageRequest pageRequest)
         {
             GetListBrandQuery getListBrandQuery = new()
@@ -33,7 +33,7 @@ namespace WebAPI.Controllers
             return Created("", result);
         }
 
-        [HttpGet("{Id}")]
+        [HttpGet("GetById/{Id}")]
         public async Task<IActionResult> GetById([FromRoute] GetByIdBrandQuery getByIdBrandQuery)
         {
             BrandGetByIdDto brandGetByIdDto = await Mediator.Send(getByIdBrandQuery);

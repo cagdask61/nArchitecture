@@ -14,7 +14,8 @@ namespace Persistence.Contexts
     {
         protected IConfiguration Configuration { get; set; }
         public DbSet<Brand> Brands { get; set; }
-       
+        public DbSet<Model> Models { get; set; }
+
 
         public BaseDbContext(DbContextOptions options, IConfiguration configuration) : base(options)
         {
@@ -30,22 +31,34 @@ namespace Persistence.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
             modelBuilder.Entity<Brand>(builder =>
             {
                 builder.ToTable("Brands").HasKey(k => k.Id);
                 builder.Property(brand => brand.Id).HasColumnName("Id");
-                builder.Property(brand => brand.Name).HasColumnName("Name");
+                builder.Property(brand => brand.Name).HasColumnName("Name").IsRequired().HasMaxLength(50);
                 builder.Property(brand => brand.IsApproved).HasColumnName("IsApproved");
                 builder.Property(brand => brand.UpdatedDate).HasColumnName("UpdatedDate");
                 builder.Property(brand => brand.CreatedDate).HasColumnName("CreatedDate");
+
+                builder.HasMany(brand => brand.Models);
             });
 
+            modelBuilder.Entity<Model>(builder =>
+            {
+                builder.ToTable("Models").HasKey(k => k.Id);
+                builder.Property(model => model.Id).HasColumnName("Id");
+                builder.Property(model => model.BrandId).HasColumnName("BrandId");
+                builder.Property(model => model.Name).HasColumnName("Name").IsRequired().HasMaxLength(50);
+                builder.Property(model => model.IsApproved).HasColumnName("IsApproved");
+                builder.Property(model => model.UpdatedDate).HasColumnName("UpdatedDate");
+                builder.Property(model => model.CreatedDate).HasColumnName("CreatedDate");
+                builder.Property(model => model.ImageUrl).HasColumnName("ImageUrl");
+                builder.Property(model => model.DailyPrice).HasColumnName("DailyPrice");
 
+                builder.HasOne(model => model.Brand);
+            });
 
-            //Brand[] brandEntitySeeds = { new(1, "BMW",true), new(2, "Mercedes", true), new(3, "Audi", true), new(4, "Fiat", true) };
-            //modelBuilder.Entity<Brand>().HasData(brandEntitySeeds);
-
-           
         }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = default)

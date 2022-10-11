@@ -19,6 +19,7 @@ namespace Persistence
         {
             services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("MsSQLServer")));
             services.AddScoped<IBrandRepository, BrandRepository>();
+            services.AddScoped<IModelRepository, ModelRepository>();
 
             return services;
         }
@@ -27,6 +28,7 @@ namespace Persistence
         {
             services.AddDbContext<BaseDbContext>(options => options.UseSqlServer(ConnectionString.Get()));
             services.AddScoped<IBrandRepository, BrandRepository>();
+            services.AddScoped<IModelRepository, ModelRepository>();
 
             return services;
         }

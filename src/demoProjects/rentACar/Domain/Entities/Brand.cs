@@ -12,19 +12,16 @@ namespace Domain.Entities
         public string Name { get; set; }
         public bool IsApproved { get; set; }
 
+        public virtual ICollection<Model> Models { get; set; }
 
         public Brand()
         {
         }
 
-        public Brand(int id, string name, bool isApproved, DateTime createdDate, DateTime updatedDate) : this()
+        public Brand(string name, bool isApproved)
         {
-            Id = id;
             Name = name;
             IsApproved = isApproved;
-            CreatedDate = createdDate;
-            UpdatedDate = updatedDate;
         }
-
     }
 }
